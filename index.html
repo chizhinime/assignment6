@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="mockup-wrap">
+        <div class="mock-up">
+            <div class="tool-bar">
+                <div class="control">
+                    <div class="close"></div>
+                    <div class="maximise"></div>
+                    <div class="minimise"></div>
+                </div>
+            </div>
+            <div class="container">
+                <aside class="sidebar">
+                    <div class="logo">
+                        <h1><img src="./logo.png" alt="" width="40px">Aerten</h1>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="#" class="nav-item"><i class="fas fa-home"></i> Dashboard</a></li>
+                        <li><a href="./about.html" class="nav-item"><i class="fa-regular fas fa-briefcase"></i> Roles</a></li>
+                        <li class="dropdown">
+                            <a href="./index.html" class="nav-item dropdown-btn"><i class="fas fa-users"></i> Employees <span><i class="fa-solid fa-arrow-down"></i></span></a>
+                            <ul class="dropdown-content">
+                                <li><a href="./index.html" class="dropdown-item active"><i class="fas fa-circle"></i>All Employees</a></li>
+                                <li><a href="#" class="dropdown-item active"><i class="fas fa-circle"></i>Recent hires</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="nav-item"><i class="fas fa-dollar-sign"></i> Payroll</a></li>
+                        <li><a href="#" class="nav-item"><i class="fas fa-chart-line"></i> Reports</a></li>
+                        <li><a href="#" class="nav-item"><i class="fas fa-cog"></i> Settings</a></li>
+                    </ul>
+                </aside>
+                <main>
+                    <header>
+                        <input type="text" placeholder="&#x1F50D; Search anything here">
+                        <div class="user-profile">
+                            <img src="./gear-solid.svg" alt="" height="20" id="user-initials">
+                            <img src="./bell-regular.svg" alt="" height="20" id="user-initials">
+                            <img src="./aboutpics.JPG" alt="" height="40" id="user-initials">
+                        </div>
+                    </header>
+                    <section class="content">
+                        <div class="employees-header">
+                            <h2>Employees <span>(100)</span></h2>
+                            <div class="actions">
+                                <button>Export</button>
+                                <button class="new-employee">New Employee</button>
+                            </div>
+                        </div>
+                        <div class="filters">
+                            <input type="text" id="search-input" placeholder="Search Employee by name, role, ID or any related keywords">
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>Name</th>
+                                    <th>Employee ID</th>
+                                    <th>Role</th>
+                                    <th>Status</th>
+                                    <th>Teams</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody id="employee-table-body">
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><span class="avatar"><img src="./aboutpics.JPG" alt="" height="40" style="border-radius: 50%;"></span> Tanner Finsha <br>@tannerfinsha@gmail.com</td>
+                                    <td>#2345AGH6JYT6</td>
+                                    <td>Product Designer <br>Full time</td>
+                                    <td><span class="status active"><i class="fas fa-circle" id="i"></i>   Active</span></td>
+                                    <td>Marketing, Design +1</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><span class="avatar">EW</span> Emeto Winner <br>emetowinner@gmail.com</td>
+                                    <td>#2345AGH6JYT6</td>
+                                    <td>Product Designer <br>Contract</td>
+                                    <td><span class="status active"><i class="fas fa-circle"></i>   Active</span></td>
+                                    <td>Product, Design +1</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><span class="avatar"><img src="./aboutpics.JPG" alt="" height="40" style="border-radius: 50%;"></span> Tassy Omah <br>tassyomah@gmail.com</td>
+                                    <td>#2345AGH6JYT6</td>
+                                    <td>Product Designer <br>Associate</td>
+                                    <td><span class="status inactive"><i class="fas fa-circle"></i>   Inactive</span></td>
+                                    <td>Product</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><span class="avatar">JM</span> James Muriel <br>jamesmuriel@gmail.com</td>
+                                    <td>#2345AGH6JYT6</td>
+                                    <td>Product Designer <br>full time</td>
+                                    <td><span class="status inactive"><i class="fas fa-circle"></i>   Inactive</span></td>
+                                    <td>Engineering, Design</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><span class="avatar">EW</span> Emeto Winner <br>emetowinner@gmail.com</td>
+                                    <td>#2345AGH6JYT6</td>
+                                    <td>Frontend Engineer <br>full time</td>
+                                    <td><span class="status inactive"><i class="fas fa-circle"></i>   Inactive</span></td>
+                                    <td>Product, Design +3</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><span class="avatar">TO</span> Tassy Omah <br>tassyomah@gmail.com</td>
+                                    <td>#2345AGH6JYT6</td>
+                                    <td>Backend Engineer<br>part time</td>
+                                    <td><span class="status active"><i class="fas fa-circle"></i>   Active</span></td>
+                                    <td>Engineering, Design</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><span class="avatar">JM</span> James Muriel <br>jamemuriel@gmail.com</td>
+                                    <td>#2345AGH6JYT6</td>
+                                    <td>Backend Engineer <br>part time</td>
+                                    <td><span class="status active"><i class="fas fa-circle"></i>   Active</span></td>
+                                    <td>Product, Design +6</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td><span class="avatar">EW</span> Emeto Winner <br>emetowinner@gmail.com/td>
+                                    <td>#2345AGH6JYT6</td>
+                                    <td>Sales specialist <br>part time</td>
+                                    <td><span class="status inactive"><i class="fas fa-circle"></i>   Inactive</span></td>
+                                    <td>Product, Design +4</td>
+                                    <td>...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="pagination">
+                            <button><i class="fa-solid fa-arrow-left"></i> Previous</button>
+                            <button class="page-number active">1</button>
+                            <button class="page-number">2</button>
+                            <button class="page-number">3</button>
+                            <button class="page-number">...</button>
+                            <button class="page-number">8</button>
+                            <button class="page-number">9</button>
+                            <button class="page-number">10</button>
+                            <button>Next <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dropdown menu functionality
+            const dropdownBtn = document.querySelector('.dropdown-btn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            dropdownBtn.addEventListener('click', function() {
+                dropdownContent.classList.toggle('show');
+            });
+
+            // Search functionality
+            const searchInput = document.getElementById('search-input');
+            const employeeTableBody = document.getElementById('employee-table-body');
+            const rows = employeeTableBody.getElementsByTagName('tr');
+
+            searchInput.addEventListener('keyup', function() {
+                const filter = searchInput.value.toLowerCase();
+                for (let i = 0; i < rows.length; i++) {
+                    const cells = rows[i].getElementsByTagName('td');
+                    let match = false;
+                    for (let j = 0; j < cells.length; j++) {
+                        if (cells[j].textContent.toLowerCase().includes(filter)) {
+                            match = true;
+                            break;
+                        }
+                    }
+                    rows[i].style.display = match ? '' : 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roles</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="mockup-wrap">
+        <div class="mock-up">
+            <div class="tool-bar">
+                <div class="control">
+                    <div class="close"></div>
+                    <div class="maximise"></div>
+                    <div class="minimise"></div>
+                </div>
+            </div>
+            <div class="container">
+                <aside class="sidebar">
+                    <div class="logo">
+                        <h1><img src="./logo.png" alt="" width="40px">Aerten</h1>
+                    </div>
+                    <ul class="nav">
+                        <li><a href="#" class="nav-item"><i class="fas fa-home"></i> Dashboard</a></li>
+                        <li><a href="./about.html" class="nav-item dropdown-btn"><i class="fa-regular fas fa-briefcase"></i> Roles</a></li>
+                        <li class="dropdown">
+                            <a href="./index.html" class="nav-item"><i class="fas fa-users"></i> Employees <span><i class="fa-solid fa-arrow-down"></i></span></a>
+                            <ul class="dropdown-content">
+                                <li><a href="./index.html" class="dropdown-item active"><i class="fas fa-circle"></i>All Employees</a></li>
+                                <li><a href="#" class="dropdown-item active"><i class="fas fa-circle"></i>Recent hires</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="nav-item"><i class="fas fa-dollar-sign"></i> Payroll</a></li>
+                        <li><a href="#" class="nav-item"><i class="fas fa-chart-line"></i> Reports</a></li>
+                        <li><a href="#" class="nav-item"><i class="fas fa-cog"></i> Settings</a></li>
+                    </ul>
+                </aside>
+                <main>
+                    <header>
+                        <input type="text" placeholder="&#x1F50D; Search anything here">
+                        <div class="user-profile">
+                            <img src="./gear-solid.svg" alt="" height="20" id="user-initials">
+                            <img src="./bell-regular.svg" alt="" height="20" id="user-initials">
+                            <img src="./aboutpics.JPG" alt="" height="40" id="user-initials">
+                        </div>
+                    </header>
+                    <div class="content">
+                        <div class="roles-view">
+                            <div class="roles-header">
+                                <h2>Roles <span>123</span></h2>
+                                <div class="actions">
+                                    <button id="assign-role-btn">Assign</button>
+                                    <button>New Role</button>
+                                </div>
+                            </div>
+                            <div class="filters">
+                                <input type="text" id="search-input" placeholder="Search Roles by Title, Teams or any related keywords">
+                            </div>
+                            <div class="roles-tabs">
+                                <div class="tab active" data-tab="all">All</div>
+                                <div class="tab" data-tab="product">Product</div>
+                                <div class="tab" data-tab="engineering">Engineering</div>
+                                <div class="tab" data-tab="marketing">Marketing</div>
+                                <div class="tab" data-tab="recruitment">Recruitment</div>
+                                <div class="tab" data-tab="sales">Sales</div>
+                                <div class="tab" data-tab="customer-service">Customer service</div>
+                            </div>
+                            <div class="roles-list" id="roles-list">
+                                <div class="role-card" data-category="marketing product engineering design">
+                                    <h3>Solution Sales Specialist</h3>
+                                    <div class="avatar-group">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <div class="avatar-count">+12</div>
+                                        <div class="avatar-count">+</div>
+                                    </div>
+                                    <p>Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. Working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
+                                    <div class="tags">
+                                        <span>Marketing</span>
+                                        <span>Product</span>
+                                        <span>Engineering</span>
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="role-footer">
+                                        <div class="role-info">
+                                            <img src="./aboutpics.JPG" alt="Avatar" class="role-avatar">
+                                            <span>James Campion</span>
+                                            <span class="role-title">Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="role-card" data-category="marketing product engineering design">
+                                    <h3>Solution Sales Specialist</h3>
+                                    <div class="avatar-group">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <div class="avatar-count">+12</div>
+                                        <div class="avatar-count">+</div>
+                                    </div>
+                                    <p>Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. Working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
+                                    <div class="tags">
+                                        <span>Marketing</span>
+                                        <span>Product</span>
+                                        <span>Engineering</span>
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="role-footer">
+                                        <div class="role-info">
+                                            <img src="./aboutpics.JPG" alt="Avatar" class="role-avatar">
+                                            <span>James Campion</span>
+                                            <span class="role-title">Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="role-card" data-category="marketing product engineering design">
+                                    <h3>Solution Sales Specialist</h3>
+                                    <div class="avatar-group">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <div class="avatar-count">+12</div>
+                                        <div class="avatar-count">+</div>
+                                    </div>
+                                    <p>Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. Working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
+                                    <div class="tags">
+                                        <span>Marketing</span>
+                                        <span>Product</span>
+                                        <span>Engineering</span>
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="role-footer">
+                                        <div class="role-info">
+                                            <img src="./aboutpics.JPG" alt="Avatar" class="role-avatar">
+                                            <span>James Campion</span>
+                                            <span class="role-title">Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="role-card" data-category="marketing product engineering design">
+                                    <h3>Solution Sales Specialist</h3>
+                                    <div class="avatar-group">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <img src="./aboutpics.JPG" alt="Avatar">
+                                        <div class="avatar-count">+12</div>
+                                        <div class="avatar-count">+</div>
+                                    </div>
+                                    <p>Responsible for driving revenue growth by identifying and pursuing new business opportunities, as well as maintaining relationships with existing clients. Working closely with customers to understand their needs and provide solutions that meet or exceed their expectations, while also achieving the company's sales goals.</p>
+                                    <div class="tags">
+                                        <span>Marketing</span>
+                                        <span>Product</span>
+                                        <span>Engineering</span>
+                                        <span>Design</span>
+                                    </div>
+                                    <div class="role-footer">
+                                        <div class="role-info">
+                                            <img src="./aboutpics.JPG" alt="Avatar" class="role-avatar">
+                                            <span>James Campion</span>
+                                            <span class="role-title">Manager</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal" id="assign-role-modal">
+        <button class="modal-close" id="modal-close">&times;</button>
+        <div class="modal-header">
+            <div class="modal-icon">
+                <img src="./culpid.png" alt="Role Icon">
+            </div>
+            <h2>Assign this role</h2>
+            <p>Select one or multiple employees to assign to this role <strong>“Senior Design Lead”</strong></p>
+        </div>
+        <div class="modal-search">
+            <input type="text" placeholder="Search for an individual or team">
+        </div>
+        <div class="modal-content">
+            <div class="employee-list">
+                <div class="employee">
+                    <div class="employee-avatar">
+                        <img src="./aboutpics.JPG" alt="Jennifer Lopez">
+                    </div>
+                    <div class="employee-info">
+                        <h3>Jennifer Lopez</h3>
+                        <p>Product Designer, Integrations</p>
+                    </div>
+                    <div class="employee-select">
+                        <input type="radio" name="employee" checked>
+                    </div>
+                </div>
+                <div class="employee">
+                    <div class="employee-avatar">
+                        <img src="./aboutpics.JPG" alt="Tassy Omah">
+                    </div>
+                    <div class="employee-info">
+                        <h3>Tassy Omah</h3>
+                        <p>Developer Relations, Payments</p>
+                    </div>
+                    <div class="employee-select">
+                        <input type="radio" name="employee">
+                    </div>
+                </div>
+                <div class="employee">
+                    <div class="employee-avatar">
+                        <img src="./aboutpics.JPG" alt="Emeto Winner">
+                    </div>
+                    <div class="employee-info">
+                        <h3>Emeto Winner</h3>
+                        <p>Backend Developer, Payments</p>
+                    </div>
+                    <div class="employee-select">
+                        <input type="radio" name="employee">
+                    </div>
+                </div>
+                <div class="employee">
+                    <div class="employee-avatar">
+                        <img src="./aboutpics.JPG" alt="Jane Mena">
+                    </div>
+                    <div class="employee-info">
+                        <h3>Jane Mena</h3>
+                        <p>Technical Specialist, Enterprise</p>
+                    </div>
+                    <div class="employee-select">
+                        <input type="radio" name="employee">
+                    </div>
+                </div>
+                <div class="employee">
+                    <div class="employee-avatar">
+                        <img src="./aboutpics.JPG" alt="Kate Magnamay">
+                    </div>
+                    <div class="employee-info">
+                        <h3>Kate Magnamay</h3>
+                        <p>Product Manager, Dashboard</p>
+                    </div>
+                    <div class="employee-select">
+                        <input type="radio" name="employee">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownBtn = document.querySelector('.dropdown-btn');
+            const dropdownContent = document.querySelector('.dropdown-content');
+
+            dropdownBtn.addEventListener('click', function() {
+                dropdownContent.classList.toggle('show');
+            });
+            const searchInput = document.getElementById('search-input');
+            const rolesList = document.getElementById('roles-list');
+            const roleCards = rolesList.getElementsByClassName('role-card');
+
+            searchInput.addEventListener('keyup', function() {
+                const filter = searchInput.value.toLowerCase();
+                for (let i = 0; i < roleCards.length; i++) {
+                    const card = roleCards[i];
+                    const text = card.textContent.toLowerCase();
+                    card.style.display = text.includes(filter) ? '' : 'none';
+                }
+            });
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    const category = tab.getAttribute('data-tab');
+                    for (let i = 0; i < roleCards.length; i++) {
+                        const card = roleCards[i];
+                        const cardCategories = card.getAttribute('data-category');
+                        if (category === 'all' || cardCategories.includes(category)) {
+                            card.style.display = '';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+            const assignRoleBtn = document.getElementById('assign-role-btn');
+            const modalOverlay = document.getElementById('modal-overlay');
+            const assignRoleModal = document.getElementById('assign-role-modal');
+            const modalClose = document.getElementById('modal-close');
+
+            assignRoleBtn.addEventListener('click', function() {
+                modalOverlay.style.display = 'block';
+                assignRoleModal.style.display = 'block';
+            });
+
+            modalClose.addEventListener('click', function() {
+                modalOverlay.style.display = 'none';
+                assignRoleModal.style.display = 'none';
+            });
+
+            modalOverlay.addEventListener('click', function() {
+                modalOverlay.style.display = 'none';
+                assignRoleModal.style.display = 'none';
+            });
+        });
+    </script>
+</body>
+</html>
